@@ -1,4 +1,4 @@
-Cricket predictor app python import tkinter as tk
+import tkinter as tk
 from tkinter import messagebox
 import webbrowser
 import threading
@@ -15,13 +15,8 @@ from collections import deque
 
 
 # my google oauth credentials - get these from console.cloud.google.com
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-client_id = os.getenv("GOOGLE_CLIENT_ID")
-client_secret = os.getenv("GOOGLE_CLIENT_SECRET")
+CLIENT_ID = ""
+CLIENT_SECRET = "
 REDIRECT_URI = "http://localhost:8080"
 SCOPE = "openid email profile"
 
@@ -428,4 +423,4 @@ def show_login_window():
 
 
 if __name__ == "__main__":
-    show_login_window() 
+    show_login_window()
