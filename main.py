@@ -17,8 +17,8 @@ from collections import deque
 # my google oauth credentials - get these from console.cloud.google.com
 import os
 
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+client_id = os.getenv("GOOGLE_CLIENT_ID")
+client_secret = os.getenv("GOOGLE_CLIENT_SECRET")
 REDIRECT_URI = "http://localhost:8080"
 SCOPE = "openid email profile"
 
