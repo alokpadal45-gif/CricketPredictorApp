@@ -12,11 +12,14 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 from collections import deque
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # my google oauth credentials - get these from console.cloud.google.com
-CLIENT_ID = ""
-CLIENT_SECRET = "
+CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", "")
+CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", "")
 REDIRECT_URI = "http://localhost:8080"
 SCOPE = "openid email profile"
 
