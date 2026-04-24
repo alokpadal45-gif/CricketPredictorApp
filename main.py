@@ -16,6 +16,9 @@ from collections import deque
 
 # my google oauth credentials - get these from console.cloud.google.com
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 client_id = os.getenv("GOOGLE_CLIENT_ID")
 client_secret = os.getenv("GOOGLE_CLIENT_SECRET")
